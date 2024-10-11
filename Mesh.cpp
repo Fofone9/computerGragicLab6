@@ -48,16 +48,16 @@ void Mesh::load(string filename) {
 				fPoints.push_back(face);
 			}
 		}
-		vertices.reserve(fPoints.size());
-		for (glm::ivec3& index : fPoints)
-		{
-			Vertex vert;
-			vert.coord = v[index.x - 1];
-			vert.texCoord = t[index.y - 1];
-			vert.normal = n[index.z - 1];
-			
-			vertices.push_back(vert);
-		}
+		
+	}
+	for (glm::ivec3& index : fPoints)
+	{
+		Vertex vert;
+		vert.coord = v[index.x - 1];
+		vert.texCoord = t[index.y - 1];
+		vert.normal = n[index.z - 1];
+
+		vertices.push_back(vert);
 	}
 }
 
