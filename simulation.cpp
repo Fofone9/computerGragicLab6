@@ -14,7 +14,6 @@ void simulation()
 	int fps = getFPS();
 	glutSetWindowTitle(to_string(fps).c_str());
 	// устанавливаем признак того, что окно нуждается в перерисовке
-	glutPostRedisplay();
 	keyboard();
 	// эта же функция будет вызвана еще раз через 20 мс
 	glutPostRedisplay();
