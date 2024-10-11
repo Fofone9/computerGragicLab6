@@ -40,12 +40,12 @@ void keyboard()
 	}
 	if (keyRight & 0x01)
 	{
-		camera.rotateLeftRight(5.0);
+		camera.rotateLeftRight(-5.0);
 		return;
 	}
 	if (keyLeft & 0x01)
 	{
-		camera.rotateLeftRight(-5.0);
+		camera.rotateLeftRight(5.0);
 		return;
 	}
 	if (keyPlus & 0x01)
